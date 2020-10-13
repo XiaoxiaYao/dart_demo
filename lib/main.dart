@@ -6,6 +6,7 @@ void main() {
       appBar: AppBar(
         title: Text("I am the app bar?why"),
         centerTitle: true,
+        backgroundColor: Colors.red[600],
       ),
       body: Center(
         child: Text("Child?"),
