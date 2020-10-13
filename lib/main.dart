@@ -9,7 +9,13 @@ void main() {
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        child: Text("Child?"),
+        child: Text(
+          "Child?",
+          style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              fontFamily: "IndieFlower"),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         child: Text("Click me "),
