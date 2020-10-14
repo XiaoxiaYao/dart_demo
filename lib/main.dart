@@ -13,9 +13,15 @@ class Test extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(child: Image.asset("images/Snip20201014_1.png")),
+      body: Center(
+          child: FlatButton.icon(
+        onPressed: () {},
+        icon: Icon(Icons.mail),
+        label: Text("I am a label"),
+        color: Colors.lightBlue,
+      )),
       floatingActionButton: FloatingActionButton(
-        child: Text("Click me "),
+        child: Text("Click"),
         onPressed: () {
           print("Hi");
         },
