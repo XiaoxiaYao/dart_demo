@@ -13,8 +13,7 @@ class Test extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body:
-          Center(child: Image(image: AssetImage("images/Snip20201014_1.png"))),
+      body: Center(child: Image.asset("images/Snip20201014_1.png")),
       floatingActionButton: FloatingActionButton(
         child: Text("Click me "),
         onPressed: () {
