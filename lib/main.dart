@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: Scaffold(
+  runApp(MaterialApp(home: Test()));
+}
+
+class Test extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       appBar: AppBar(
         title: Text("I am the app bar?why"),
         centerTitle: true,
@@ -10,7 +15,7 @@ void main() {
       ),
       body: Center(
         child: Text(
-          "Child?",
+          "Child? this is cool. Amazing!",
           style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
@@ -23,6 +28,6 @@ void main() {
           print("Hi");
         },
       ),
-    ),
-  ));
+    );
+  }
 }
