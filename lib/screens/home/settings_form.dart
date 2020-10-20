@@ -49,6 +49,7 @@ class _SettingsFormState extends State<SettingsForm> {
               });
             },
             value: _currentSugars ?? "0",
+            decoration: textInputDecoration,
           ),
           RaisedButton(
             onPressed: () async {},
