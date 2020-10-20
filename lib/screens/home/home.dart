@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/models/brew.dart';
+import 'package:my_app/screens/home/settings_form.dart';
 import 'package:my_app/services/auth.dart';
 import 'package:my_app/services/database.dart';
 import 'package:provider/provider.dart';
@@ -16,7 +17,8 @@ class Home extends StatelessWidget {
           context: context,
           builder: (context) {
             return Container(
-                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 60));
+                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 60),
+                child: SettingsForm());
           });
     }
 
