@@ -79,7 +79,11 @@ class _SettingsFormState extends State<SettingsForm> {
                   ),
                   RaisedButton(
                     onPressed: () async {
-                      print("$_currentName $_currentSugars $_currentStrength");
+                      await DatabaseService(uid: user.uid).updateUserData(
+                          _currentSugars ?? userdata.sugars,
+                          _currentName ?? userdata.name,
+                          _currentStrength ?? userdata.strength);
+                      Navigator.pop(context);
                     },
                     color: Colors.pink[400],
                     child: Text(
